@@ -26,6 +26,7 @@ module.exports = function transform(arr) {
     console.log('arr[i-2]: ' + arr[i - 2])
     console.log(newArr)
     i++
+    
     }
   console.log(newArr)
   return newArr
