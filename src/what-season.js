@@ -2,17 +2,18 @@ const CustomError = require("../extensions/custom-error");
 
 module.exports = function getSeason(date) {
 if(date === undefined){return 'Unable to determine the time of year!'}
-  function isValidDate(value) {
-    var dateWrapper = new Date(value);
-    return !isNaN(dateWrapper.getDate());
-}
-// if (!(date instanceof Date)){return 'THROW'}
-let season = ''
-  if(isValidDate(date)){season = date.getMonth()}
-  else {throw new Error()}
-  if (!date.getTime() === date.getTime()) {
-    throw new Error();
-}
+if (!date.getTime === date.getTime()) {throw new Error()}
+season = date.getMonth()
+
+// function isValidDate(value) {
+//     var dateWrapper = new Date(value);
+//     return !isNaN(dateWrapper.getDate());
+// }
+
+// let season = ''
+//   if(isValidDate(date)){season = date.getMonth()}
+//   else {throw new Error()}
+ 
   console.log(season)
 if(season<=1 || season>=11){return 'winter'}
   else if(season>=2 && season<=4){return 'spring'}
