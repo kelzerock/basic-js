@@ -14,7 +14,7 @@ const { NotImplementedError } = require('../extensions/index.js');
 function sortByHeight(arr) {
   let sortArr = arr.slice().sort((a, b) => a -b).reverse().filter((el) => el !== -1);
   let result = [];
-  arr.forEach((el, ind) => {
+  arr.forEach((el) => {
     if (el === -1) {
       result.push(el);
     } else {
